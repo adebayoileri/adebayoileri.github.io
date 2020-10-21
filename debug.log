@@ -1,0 +1,6 @@
+[1016/093221.550:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\ACER\AppData\Local\Microsoft\Edge\User Data\Crashpad\attachments\3010d50b-2968-4dca-b4db-c7a7023d984b: The system cannot find the path specified. (0x3)
+[1016/093221.578:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\ACER\AppData\Local\Microsoft\Edge\User Data\Crashpad\attachments\7b8437e7-a820-422b-87fa-aab8c41fed14: The system cannot find the path specified. (0x3)
+[1016/093221.579:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1016/130540.917:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1018/133745.715:ERROR:settings.cc(425)] Settings magic is not 1129342067
+[1018/134746.083:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
