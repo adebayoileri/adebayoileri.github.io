@@ -4,7 +4,7 @@ import {
     BoxProps,
     chakra,
     Text,
-    useColorModeValue,
+    // useColorModeValue,
     // Wrap,
 } from "@chakra-ui/core";
 import Header from "../../components/Header";
@@ -22,13 +22,15 @@ const Home = () => {
                     <Container>
                         <Box maxW="760px" mx="auto" textAlign="center">
                             <chakra.h1
-                                fontSize={{ base: "2.25rem", sm: "3rem", lg: "3.75rem" }}
+                                // fontSize={{ base: "2.25rem", sm: "3rem", lg: "3.75rem" }}
+                                fontSize="5xl"
                                 letterSpacing="tight"
                                 fontWeight="bold"
                                 mb="16px"
                                 lineHeight="1.2"
+                                // color={useColorModeValue("#ffff", "#383838")}
                             >
-                                Hi, I'm Adebayo Ilerioluwa
+                                Hey there, I'm Adebayo
                 {/* <Box
                                     as="span"
                                     color={useColorModeValue("teal.500", "teal.300")}
@@ -39,7 +41,7 @@ const Home = () => {
                             </chakra.h1>
 
                             <Text opacity={0.7} fontSize={{ base: "lg", lg: "xl" }} mt="6">
-                             Software Engineer Based In Lagos Nigeria.
+                               I'm a Software Engineer Based In Lagos Nigeria with ~2 years of experience working with various teams and building modern web applications.
               </Text>
                         </Box>
                     </Container>
