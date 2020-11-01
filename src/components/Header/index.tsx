@@ -39,7 +39,7 @@ const HeaderContent = (props: any) => {
           size="md"
           fontSize="lg"
           aria-label={`Switch to ${text} mode`}
-          // variant="ghost"
+          variant="ghost"
           color="current"
           ml="3"
           onClick={toggleMode}
@@ -51,7 +51,6 @@ const HeaderContent = (props: any) => {
 }
 
 const Header = (props: any) => {
-  // const bg = useColorModeValue("white", "gray.800")
   return (
     <chakra.header
       pos="fixed"

@@ -3,7 +3,9 @@ import {
     Box,
     BoxProps,
     chakra,
-    Text
+    Link,
+    Text,
+    SimpleGrid
 } from "@chakra-ui/core";
 import Header from "../../components/Header";
 import ProjectCard from "../../components/ProjectCard";
@@ -33,6 +35,9 @@ const Home = () => {
                             <Text opacity={0.7} fontSize={{ base: "lg", lg: "xl" }} mt="6">
                                 I'm a Software Engineer Based In Lagos Nigeria with ~2 years of experience working with various teams and building modern web applications.
               </Text>
+              <Text opacity={0.5} color="blue" fontSize="16px" mt="6">
+                            Learn more about <Link>me</Link>
+              </Text>
                         </Box>
                     </Container>
                 </Box>
@@ -51,7 +56,14 @@ const Home = () => {
                             </chakra.h5>
                     </Box>
                     <Container>
-                        <ProjectCard />
+                        <SimpleGrid columns={[1, null, 3]} spacing="30px">
+
+                            <ProjectCard />
+                            <ProjectCard />
+                            <ProjectCard />
+
+                            <ProjectCard />
+                        </SimpleGrid>
                     </Container>
                 </Box>
             </Box>
