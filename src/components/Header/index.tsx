@@ -19,30 +19,16 @@ const HeaderContent = (props: any) => {
   return (
     <Flex w="100%" h="100%" px="6" align="center" justify="space-between">
       <Flex align="center">
-        {/* <NextLink href="/" passHref> */}
         <chakra.a display="block" aria-label="Chakra UI, Back to homepage">
           <Text fontSize="22px">
             Adebayo Ilerioluwa
            </Text>
         </chakra.a>
-        {/* </NextLink> */}
-        {/* <HStack
-          as="nav"
-          spacing="4"
-          ml="24px"
-          display={{ base: "none", md: "flex" }}
-        >
-          <Link>About</Link>
-          <Link>Contact</Link>
-          <Link>Projects</Link>
-        </HStack> */}
       </Flex>
 
       <Flex maxW="720px" align="center" >
-        {/* <VersionSwitcher /> */}
         <HStack spacing="5"
           as="nav"
-          // spacing="4"
           ml="24px"
           display={{ base: "none", md: "flex" }}>
           <Link>About</Link>
@@ -53,7 +39,7 @@ const HeaderContent = (props: any) => {
           size="md"
           fontSize="lg"
           aria-label={`Switch to ${text} mode`}
-          variant="ghost"
+          // variant="ghost"
           color="current"
           ml="3"
           onClick={toggleMode}
