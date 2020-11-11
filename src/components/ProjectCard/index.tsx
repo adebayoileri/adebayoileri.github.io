@@ -29,7 +29,6 @@ export default function ProjectCard(props: any) {
                         ))
                     }
                 </Box>
-
                 <Box
                     mt="2"
                     fontWeight="semibold"
@@ -37,7 +36,6 @@ export default function ProjectCard(props: any) {
                     lineHeight="tight"
                     isTruncated
                 >
-                    {/* CleanUp Create-React-App  */}
                     {props.title}
                 </Box>
                 <Box
@@ -45,25 +43,22 @@ export default function ProjectCard(props: any) {
                     as="h4"
                     color="gray.500"
                     lineHeight="tight"
-                    dangerouslySetInnerHTML={{__html: props.description}}
+                    dangerouslySetInnerHTML={{ __html: props.description }}
                 >
-                    {/* <span role="img" aria-label="hammer">🔨 </span>Remove unwanted files from default create-react-app */}
-                    {/* {props.description} */}
                 </Box>
 
             </Box>
 
             <Box d="flex" p="6" pb="0" alignItems="center">
                 <Link
-                    // href="https://github.com/adebayoileri/cleanup-create-react-app"
                     href={props.githubLink}
                     isExternal mr="2">
                     <FaGithub />
                 </Link>
                 <Link
-                    //  href="https://www.npmjs.com/package/cleanup-create-react-app" 
-                    href={props.liveLink}
-                    isExternal mr="2">
+                    href={props.otherLink}
+                    isExternal
+                     mr="2">
                     <FaExternalLinkAlt />
                 </Link>
             </Box>

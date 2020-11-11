@@ -21,7 +21,9 @@ const HeaderContent = (props: any) => {
       <Flex align="center">
         <chakra.a display="block" aria-label="Chakra UI, Back to homepage">
           <Text fontSize="22px">
-            Adebayo Ilerioluwa
+          <Link href="/" style={{textDecoration: "none"}}>
+           Adebayo Ilerioluwa
+          </Link> 
            </Text>
         </chakra.a>
       </Flex>
@@ -31,9 +33,9 @@ const HeaderContent = (props: any) => {
           as="nav"
           ml="24px"
           display={{ base: "none", md: "flex" }}>
-          <Link href="/about">About</Link>
-          <Link href="#projects">Projects</Link>
-          <Link>Resume</Link>
+          <Link href="/about" style={{textDecoration: "none"}}>About</Link>
+          <Link href="#projects" style={{textDecoration: "none"}}>Projects</Link>
+          <Link href="https://docs.google.com/document/d/1PxfGoI88gx26h7EebkXm3bZod13VELnsAtEkMgvmn3U/edit?usp=sharing" isExternal style={{textDecoration: "none"}}>Resume</Link>
         </HStack>
         {/* <IconButton
           size="md"

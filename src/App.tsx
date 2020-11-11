@@ -4,7 +4,8 @@ import {
   CSSReset,
 } from "@chakra-ui/core"
 import theme from "@chakra-ui/theme";
-import {BrowserRouter as Router, Route} from "react-router-dom"
+import {BrowserRouter as Router, Route} from "react-router-dom";
+import "./scroll.css";
 import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Footer from "./components/Footer";
