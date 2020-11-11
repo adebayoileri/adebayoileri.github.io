@@ -8,31 +8,26 @@ import {
     FaExternalLinkAlt
 } from "react-icons/fa"
 
-export default function ProjectCard() {
+export default function ProjectCard(props: any) {
     return (
         <Box maxW="sm" borderWidth="1px" rounded="lg" overflow="hidden" height="280px">
             <Box p="6">
                 <Box d="flex" alignItems="baseline">
-                    <Box
-                        color="gray.500"
-                        fontWeight="semibold"
-                        letterSpacing="wide"
-                        fontSize="xs"
-                        textTransform="uppercase"
-                    //   ml="2"
-                    >
-                        Javascript
-            </Box>
-                    <Box
-                        color="gray.500"
-                        fontWeight="semibold"
-                        letterSpacing="wide"
-                        fontSize="xs"
-                        textTransform="uppercase"
-                        ml="2"
-                    >
-                        SHELL(SH)
-            </Box>
+                    {
+                        props.lng && props.lng.map((lang: string) => (
+                            <Box
+                                color="gray.500"
+                                fontWeight="semibold"
+                                letterSpacing="wide"
+                                fontSize="xs"
+                                textTransform="uppercase"
+                                ml="2"
+                            >
+                                {lang}
+                            </Box>
+
+                        ))
+                    }
                 </Box>
 
                 <Box
@@ -42,24 +37,33 @@ export default function ProjectCard() {
                     lineHeight="tight"
                     isTruncated
                 >
-                    CleanUp Create-React-App
-          </Box>
+                    {/* CleanUp Create-React-App  */}
+                    {props.title}
+                </Box>
                 <Box
                     mt="2"
                     as="h4"
                     color="gray.500"
                     lineHeight="tight"
+                    dangerouslySetInnerHTML={{__html: props.description}}
                 >
-                    <span role="img" aria-label="hammer">🔨 </span>Remove unwanted files from default create-react-app
-          </Box>
+                    {/* <span role="img" aria-label="hammer">🔨 </span>Remove unwanted files from default create-react-app */}
+                    {/* {props.description} */}
+                </Box>
 
             </Box>
 
             <Box d="flex" p="6" pb="0" alignItems="center">
-                <Link href="https://github.com/adebayoileri/cleanup-create-react-app" isExternal mr="2">
+                <Link
+                    // href="https://github.com/adebayoileri/cleanup-create-react-app"
+                    href={props.githubLink}
+                    isExternal mr="2">
                     <FaGithub />
                 </Link>
-                <Link href="https://www.npmjs.com/package/cleanup-create-react-app" isExternal mr="2">
+                <Link
+                    //  href="https://www.npmjs.com/package/cleanup-create-react-app" 
+                    href={props.liveLink}
+                    isExternal mr="2">
                     <FaExternalLinkAlt />
                 </Link>
             </Box>

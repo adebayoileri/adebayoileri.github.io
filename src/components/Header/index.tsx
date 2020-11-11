@@ -2,19 +2,19 @@ import {
   chakra,
   Flex,
   HStack,
-  IconButton,
+  // IconButton,
   Text,
-  useColorMode,
+  // useColorMode,
   Link,
-  useColorModeValue,
+  // useColorModeValue,
 } from "@chakra-ui/core";
 import React from "react";
-import { FaMoon, FaSun } from "react-icons/fa";
+// import { FaMoon, FaSun } from "react-icons/fa";
 
 const HeaderContent = (props: any) => {
-  const { toggleColorMode: toggleMode } = useColorMode()
-  const text = useColorModeValue("dark", "light")
-  const SwitchIcon = useColorModeValue(FaMoon, FaSun)
+  // const { toggleColorMode: toggleMode } = useColorMode()
+  // const text = useColorModeValue("dark", "light")
+  // const SwitchIcon = useColorModeValue(FaMoon, FaSun)
 
   return (
     <Flex w="100%" h="100%" px="6" align="center" justify="space-between">
@@ -31,11 +31,11 @@ const HeaderContent = (props: any) => {
           as="nav"
           ml="24px"
           display={{ base: "none", md: "flex" }}>
-          <Link>About</Link>
-          <Link>Projects</Link>
-          <Link>Contact</Link>
+          <Link href="/about">About</Link>
+          <Link href="#projects">Projects</Link>
+          <Link>Resume</Link>
         </HStack>
-        <IconButton
+        {/* <IconButton
           size="md"
           fontSize="lg"
           aria-label={`Switch to ${text} mode`}
@@ -44,7 +44,7 @@ const HeaderContent = (props: any) => {
           ml="3"
           onClick={toggleMode}
           icon={<SwitchIcon />}
-        />
+        /> */}
       </Flex>
     </Flex>
   )
@@ -56,7 +56,7 @@ const Header = (props: any) => {
       pos="fixed"
       top="0"
       zIndex="1"
-      // bg={bg}
+      bg="white"
       left="0"
       right="0"
       borderBottomWidth="1px"
