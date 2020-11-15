@@ -35,7 +35,8 @@ const HeaderContent = (props: any) => {
           display={{ base: "none", md: "flex" }}>
           <Link href="/about" style={{textDecoration: "none"}}>About</Link>
           <Link href="#projects" style={{textDecoration: "none"}}>Projects</Link>
-          <Link href="https://docs.google.com/document/d/1PxfGoI88gx26h7EebkXm3bZod13VELnsAtEkMgvmn3U/edit?usp=sharing" isExternal style={{textDecoration: "none"}}>Resume</Link>
+          <Link href="https://standardresume.co/r/C4cPLKPKk8hg-scZ5rhlp" isExternal style={{textDecoration: "none"}}>Resume</Link>
+          {/* "https://docs.google.com/document/d/1PxfGoI88gx26h7EebkXm3bZod13VELnsAtEkMgvmn3U/edit?usp=sharing" */}
         </HStack>
         {/* <IconButton
           size="md"
