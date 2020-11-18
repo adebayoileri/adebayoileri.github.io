@@ -38,7 +38,9 @@ export default function Footer() {
           <Box mt="3" mx="auto" p="6">
             <Flex align="center" justify="center">
               <Flex mr="2">
-                <Link href="https://dev.to/adebayoileri" isExternal>
+                <Link href="https://dev.to/adebayoileri"
+                alt="adebayo_devto"
+                 isExternal>
                   <FaDev size="30px" />
                 </Link>
               </Flex>
@@ -46,25 +48,29 @@ export default function Footer() {
                 <Link
                   href="https://stackoverflow.com/users/12805828/adebayo-ilerioluwa"
                   isExternal
+                  alt="adebayo_stackoverflow"
                 >
                   <FaStackOverflow size="30px" />
                 </Link>
               </Flex>
               <Flex mr="2">
-                <Link href="https://github.com/adebayoileri" isExternal>
+                <Link href="https://github.com/adebayoileri" 
+                alt="adebayo_github"
+                isExternal>
                   <FaGithub size="30px" />
                 </Link>
               </Flex>
               <Flex mr="2">
                 <Link
                   href="https://www.linkedin.com/in/adebayoileri/"
+                  alt="adebayo_linkedin"
                   isExternal
                 >
                   <FaLinkedin size="30px" />
                 </Link>
               </Flex>
               <Flex>
-                <Link href="https://twitter.com/adeileri" isExternal>
+                <Link href="https://twitter.com/adeileri" alt="adebayo_twitter" isExternal>
                   <FaTwitter size="30px" />
                 </Link>
               </Flex>

@@ -19,7 +19,7 @@ const HeaderContent = (props: any) => {
   return (
     <Flex w="100%" h="100%" px="6" align="center" justify="space-between">
       <Flex align="center">
-        <chakra.a display="block" aria-label="Chakra UI, Back to homepage">
+        <chakra.a display="block" aria-label="Back to homepage">
           <Text fontSize="22px">
           <Link href="/" style={{textDecoration: "none"}}>
            Adebayo Ilerioluwa

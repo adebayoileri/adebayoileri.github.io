@@ -68,7 +68,7 @@ export default function About() {
                         {/* </Flex> */}
                                  <Text fontSize="lg" opacity={0.6} mt={10} > 
 
-When not working on a project or thinking about programming, I'm watching TV series on Netflix <span aria-label="tv" role="img">📺</span>, playing COD Mobile <span aria-label="controller" role="img">🎮</span>, reading a blog, spending time with family and friends.
+When not working on a project or thinking about programming, I'm watching TV series on Netflix <span aria-label="tv" role="img" style={{opacity: "1"}}>📺</span>, playing COD Mobile <span aria-label="controller" role="img">🎮</span>, reading a blog, spending time with family and friends.
                                  </Text>
                     </Box>
                 </Box>
