@@ -1,5 +1,12 @@
 export const projects = [
     {
+        title: "Meal Booking APp",
+        description: `An application that allows customers to make food orders and helps the food vendor know what the customers want to eat.`,
+        lng: ["nodejs", "react", "chakra-ui", "postgresql"],
+        githubLink: `https://github.com/adebayoileri/Meal-Booking-App`,
+        otherLink: `https://book-meal.netlify.app/`
+    },
+    {
         title: "CleanUp Create-React-App",
         description: `<span role="img" aria-label="hammer">🔨 </span>A npm package to delete commonly unwanted files from default create-react-app.`,
         lng: ["javascript", "shell(sh)"],
