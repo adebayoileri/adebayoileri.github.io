@@ -3,7 +3,7 @@ export const projects = [
         title: "Meal Booking App",
         description: `An application that allows customers to make food orders and helps the food vendor know what the customers want to eat.`,
         lng: ["nodejs", "react", "postgresql"],
-        githubLink: `https://github.com/adebayoileri/Meal-Booking-App`,
+        githubLink: `https://github.com/adebayoileri/Book-Meal-App`,
         otherLink: `https://book-meal.netlify.app/`
     },
     {
