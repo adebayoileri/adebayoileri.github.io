@@ -2,6 +2,7 @@ import {
   chakra,
   Flex,
   HStack,
+  Button,
   // IconButton,
   Text,
   // useColorMode,
@@ -21,23 +22,36 @@ const HeaderContent = (props: any) => {
       <Flex align="center">
         <chakra.a display="block" aria-label="Back to homepage">
           <Text fontSize="22px">
-          <Link href="/" style={{textDecoration: "none"}}>
-           Adebayo Ilerioluwa
-          </Link> 
-           </Text>
+            <Link href="/" style={{ textDecoration: "none" }}>
+              Adebayo Ilerioluwa
+            </Link>
+          </Text>
         </chakra.a>
       </Flex>
 
-      <Flex maxW="720px" align="center" >
-        <HStack spacing="5"
+      <Flex maxW="720px" align="center">
+        <HStack
+          spacing="5"
           as="nav"
           ml="24px"
-          display={{ base: "none", md: "flex" }}>
-          <Link href="/about" style={{textDecoration: "none"}}>About</Link>
-          <Link href="#projects" style={{textDecoration: "none"}}>Projects</Link>
-          <Link href="https://standardresume.co/r/C4cPLKPKk8hg-scZ5rhlp" isExternal style={{textDecoration: "none"}}>Resume</Link>
+          display={{ base: "none", md: "flex" }}
+        >
+          <Link href="/about" style={{ textDecoration: "none" }}>
+            About
+          </Link>
+          <Link href="#projects" style={{ textDecoration: "none" }}>
+            Projects
+          </Link>
           {/* "https://docs.google.com/document/d/1PxfGoI88gx26h7EebkXm3bZod13VELnsAtEkMgvmn3U/edit?usp=sharing" */}
         </HStack>
+        <Link
+          href="https://standardresume.co/r/C4cPLKPKk8hg-scZ5rhlp"
+          ml="3"
+          isExternal
+          style={{ textDecoration: "none" }}
+        >
+          <Button>Resume</Button>
+        </Link>
         {/* <IconButton
           size="md"
           fontSize="lg"
@@ -50,8 +64,8 @@ const HeaderContent = (props: any) => {
         /> */}
       </Flex>
     </Flex>
-  )
-}
+  );
+};
 
 const Header = (props: any) => {
   return (
@@ -70,7 +84,7 @@ const Header = (props: any) => {
         <HeaderContent />
       </chakra.div>
     </chakra.header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
