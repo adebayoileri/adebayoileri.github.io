@@ -36,7 +36,7 @@ export default function About() {
                 />
               </Flex>
               <chakra.h5
-                fontSize="5xl"
+                fontSize="4xl"
                 letterSpacing="tight"
                 fontWeight="bold"
                 mb="16px"
@@ -57,7 +57,7 @@ export default function About() {
       </Box>
       <Box mb={20}>
         <Box as="section" pb="6rem" id="about">
-          <Box maxW="74%" mx="auto" textAlign="left">
+          <Box maxW="86%" mx="auto" textAlign="left">
             <chakra.h5
               fontSize="3xl"
               letterSpacing="tight"
@@ -68,18 +68,18 @@ export default function About() {
               About Me
             </chakra.h5>
             {/* <Flex textAlign="left"> */}
-            <Text fontSize="lg" opacity={0.6}>
+            <Text fontSize="md" opacity={0.9}>
               I'm Adebayo Ilerioluwa, but friends call me Bayo or Ileri. A
               Software Engineer with practical and professional experience in
               building modern web applications with various teams, businesses
               and startups around the world.
             </Text>
-            <Text fontSize="lg" mt="3" opacity={0.6}>
+            <Text fontSize="md" mt="3" opacity={0.9}>
               I am passionate about helping people and improving the quality of
               life of society through technology. My technology interests(Stack)
               includes:
             </Text>
-            <List fontSize="lg" opacity={0.6}>
+            <List fontSize="md" opacity={0.9}>
               <ListItem><ListIcon fontSize={"16px"} as={FaArrowRight}/>JavaScript</ListItem>
               <ListItem><ListIcon fontSize={"16px"} as={FaArrowRight}/>ReactJS/NextJS/Typescript/ExpressJS/NodeJS</ListItem>
               <ListItem><ListIcon fontSize={"16px"} as={FaArrowRight}/>PHP Laravel</ListItem>
@@ -87,12 +87,12 @@ export default function About() {
               <ListItem><ListIcon fontSize={"16px"} as={FaArrowRight}/>MongoDB/PostgreSQL</ListItem>
             </List>
             {/* </Flex> */}
-            <Text  mt="3" fontSize="lg" opacity={0.6}>
+            <Text  mt="3" fontSize="md" opacity={0.9}>
               I enjoy continuously learning and improving through online
               courses, mentorship and stay abreast with new tools in the
               fast-growing developer community.
             </Text>
-            <Text fontSize="lg" opacity={0.6} mt={6}>
+            <Text fontSize="md" opacity={0.9} mt={6}>
               When not working on a project or thinking about programming, I'm
               watching TV series on Netflix{" "}
               <span aria-label="tv" role="img" style={{ opacity: "1" }}>
@@ -104,10 +104,10 @@ export default function About() {
               </span>
               , reading a blog, spending time with family and friends.
             </Text>
-            <Text mt="3" fontSize="lg" opacity={0.6}>
+            <Text mt="3" fontSize="md" opacity={0.9}>
               Want to know more about me? I'd love to connect with you.
             </Text>
-              <Text fontSize="lg" opacity={0.6} mt="1">
+              <Text fontSize="md" opacity={0.9} mt="1">
                 Reach Out on <Link href="https://twitter.com/adeileri"  color="#3e8dc6" isExternal>Twitter</Link> or via  <Link href="mailto:adebayorilerioluwa@gmail.com" color="#3e8dc6">Email</Link>
                 </Text> 
           </Box>

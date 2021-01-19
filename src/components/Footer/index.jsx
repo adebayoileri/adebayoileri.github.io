@@ -14,7 +14,7 @@ export default function Footer() {
       <Box p="8" bg="#f5f7fa">
         <Box maxW="760px" mx="auto" textAlign="center">
           <chakra.h5
-            fontSize="5xl"
+            fontSize="4xl"
             letterSpacing="tight"
             fontWeight="bold"
             mb="16px"
@@ -26,7 +26,7 @@ export default function Footer() {
             </span>
           </chakra.h5>
 
-          <Text opacity={0.7} fontSize={{ base: "lg", lg: "xl" }} mt="6">
+          <Text opacity={0.9} fontSize={{ base: "md", xl: "md" }} mt="6">
             I'm currently looking to join a team who is passionate about
             improving the lives of the people around them
           </Text>
