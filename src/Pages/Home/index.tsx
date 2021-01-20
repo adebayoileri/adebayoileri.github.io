@@ -38,7 +38,7 @@ const Home = () => {
               </chakra.h1>
 
               <Text opacity={0.95} fontSize={{ base: "md", xl: "md" }} mx="auto" mt="6" width={{base:"100%", xl: "80%"}}>
-                I'm a Software Engineer Based In Lagos Nigeria with 2 years of
+                I'm a Software Engineer Based In Lagos Nigeria with 
                 professional and practical experience building modern web
                 applications and working with various teams, startups and
                 companies.
