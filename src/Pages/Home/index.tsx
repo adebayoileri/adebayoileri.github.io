@@ -28,7 +28,7 @@ const Home = () => {
           <Container>
             <Box maxW="760px" mx="auto" textAlign="center">
               <chakra.h1
-                fontSize={"4xl"}
+               fontSize={{base: "4xl", xl: "5xl"}}
                 letterSpacing="tight"
                 fontWeight="bold"
                 mb="16px"
