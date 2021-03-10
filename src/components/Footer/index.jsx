@@ -27,7 +27,7 @@ export default function Footer() {
           </chakra.h5>
 
           <Text opacity={0.9} fontSize={{ base: "md", xl: "md" }} mt="6">
-            I'm currently looking to join a team who is passionate about
+            I'm currently looking to join a team passionate about
             improving the lives of the people around them
           </Text>
           <Text opacity={0.8} color="#3e8dc6" fontSize="16px" mt="6">
