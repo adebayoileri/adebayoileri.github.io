@@ -9,6 +9,7 @@ import {
   Skeleton,
 } from "@chakra-ui/core";
 import Header from "../../components/Header";
+import { Helmet } from "react-helmet-async";
 import ProjectCard from "../../components/ProjectCard";
 import { projects } from "../../data/projects";
 
@@ -22,13 +23,17 @@ const Home = () => {
   }, 3000);
   return (
     <>
+      <Helmet>
+        <title>Adebayo Ilerioluwa - Javascript Engineer</title>
+      </Helmet>
+
       <Header />
       <Box mb={20}>
         <Box as="section" pt="12rem" pb="6rem">
           <Container>
             <Box maxW="760px" mx="auto" textAlign="center">
               <chakra.h1
-               fontSize={{base: "4xl", xl: "5xl"}}
+                fontSize={{ base: "4xl", xl: "5xl" }}
                 letterSpacing="tight"
                 fontWeight="bold"
                 mb="16px"
@@ -37,11 +42,16 @@ const Home = () => {
                 Hey there, I'm Adebayo
               </chakra.h1>
 
-              <Text opacity={0.95} fontSize={{ base: "md", xl: "md" }} mx="auto" mt="6" width={{base:"100%", xl: "80%"}}>
-                I'm a Software Engineer Based In Lagos Nigeria with 
-                professional and practical experience building modern web
-                applications and working with various teams, startups and
-                companies.
+              <Text
+                opacity={0.95}
+                fontSize={{ base: "md", xl: "md" }}
+                mx="auto"
+                mt="6"
+                width={{ base: "100%", xl: "80%" }}
+              >
+                I'm a Software Engineer Based In Lagos Nigeria with professional
+                and practical experience building modern web applications and
+                working with various teams, startups and companies.
               </Text>
               <Text opacity={0.7} color="blue" fontSize="16px" mt="6">
                 Learn more about{" "}

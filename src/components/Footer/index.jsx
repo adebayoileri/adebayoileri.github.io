@@ -26,10 +26,18 @@ export default function Footer() {
             </span>
           </chakra.h5>
 
-          <Text opacity={0.9} fontSize={{ base: "md", xl: "md" }} mt="6">
-            I'm currently looking to join a team passionate about
-            improving the lives of the people around them
-          </Text>
+          <Box d="flex" alignItems="center" justifyContent="center">
+            <Text
+              opacity={0.9}
+              fontSize={{ base: "md", xl: "md" }}
+              textAlign="center"
+              mt="6"
+            >
+              I'm interested in contributing to interesting projects and ideas.
+              {/* I'm currently looking to join a team passionate about
+            improving the lives of the people around them */}
+            </Text>
+          </Box>
           <Text opacity={0.8} color="#3e8dc6" fontSize="16px" mt="6">
             <Link href="mailto:adebayorilerioluwa@gmail.com" color="#3e8dc6">
               Say hello to me
@@ -38,9 +46,11 @@ export default function Footer() {
           <Box mt="3" mx="auto" p="6">
             <Flex align="center" justify="center">
               <Flex mr="2">
-                <Link href="https://dev.to/adebayoileri"
-                alt="adebayo_devto"
-                 isExternal>
+                <Link
+                  href="https://dev.to/adebayoileri"
+                  alt="adebayo_devto"
+                  isExternal
+                >
                   <FaDev size="30px" />
                 </Link>
               </Flex>
@@ -54,9 +64,11 @@ export default function Footer() {
                 </Link>
               </Flex>
               <Flex mr="2">
-                <Link href="https://github.com/adebayoileri" 
-                alt="adebayo_github"
-                isExternal>
+                <Link
+                  href="https://github.com/adebayoileri"
+                  alt="adebayo_github"
+                  isExternal
+                >
                   <FaGithub size="30px" />
                 </Link>
               </Flex>
@@ -70,7 +82,11 @@ export default function Footer() {
                 </Link>
               </Flex>
               <Flex>
-                <Link href="https://twitter.com/adeileri" alt="adebayo_twitter" isExternal>
+                <Link
+                  href="https://twitter.com/adeileri"
+                  alt="adebayo_twitter"
+                  isExternal
+                >
                   <FaTwitter size="30px" />
                 </Link>
               </Flex>

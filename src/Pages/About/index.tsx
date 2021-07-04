@@ -10,10 +10,11 @@ import {
   ListItem,
   List,
   ListIcon,
-  Link
+  Link,
 } from "@chakra-ui/core";
 import Header from "../../components/Header";
-import { FaArrowRight } from "react-icons/fa"
+import { Helmet } from "react-helmet-async";
+import { FaArrowRight } from "react-icons/fa";
 
 const Container = (props: BoxProps) => (
   <Box w="full" pb="12" pt="3" mx="auto" maxW="1200px" px={6} {...props} />
@@ -22,6 +23,10 @@ const Container = (props: BoxProps) => (
 export default function About() {
   return (
     <>
+      <Helmet>
+        <title>About Adebayo Ilerioluwa</title>
+      </Helmet>
+
       <Header />
       <Box mb={10}>
         <Box as="section" pt="12rem" pb="6rem">
@@ -80,14 +85,26 @@ export default function About() {
               includes:
             </Text>
             <List fontSize="md" opacity={0.9}>
-              <ListItem><ListIcon fontSize={"16px"} as={FaArrowRight}/>JavaScript</ListItem>
-              <ListItem><ListIcon fontSize={"16px"} as={FaArrowRight}/>ReactJS/NextJS/Typescript/ExpressJS/NodeJS</ListItem>
-              <ListItem><ListIcon fontSize={"16px"} as={FaArrowRight}/>PHP Laravel</ListItem>
-              <ListItem><ListIcon fontSize={"16px"} as={FaArrowRight}/>REST/GraphQL</ListItem>
-              <ListItem><ListIcon fontSize={"16px"} as={FaArrowRight}/>MongoDB/PostgreSQL</ListItem>
+              <ListItem>
+                <ListIcon fontSize={"16px"} as={FaArrowRight} />
+                JavaScript
+              </ListItem>
+              <ListItem>
+                <ListIcon fontSize={"16px"} as={FaArrowRight} />
+                ReactJS/NextJS/Typescript/ExpressJS/NodeJS
+              </ListItem>
+
+              <ListItem>
+                <ListIcon fontSize={"16px"} as={FaArrowRight} />
+                REST/GraphQL
+              </ListItem>
+              <ListItem>
+                <ListIcon fontSize={"16px"} as={FaArrowRight} />
+                MongoDB/PostgreSQL
+              </ListItem>
             </List>
             {/* </Flex> */}
-            <Text  mt="3" fontSize="md" opacity={0.9}>
+            <Text mt="3" fontSize="md" opacity={0.9}>
               I enjoy continuously learning and improving through online
               courses, mentorship and stay abreast with new tools in the
               fast-growing developer community.
@@ -107,9 +124,20 @@ export default function About() {
             <Text mt="3" fontSize="md" opacity={0.9}>
               Want to know more about me? I'd love to connect with you.
             </Text>
-              <Text fontSize="md" opacity={0.9} mt="1">
-                Reach Out on <Link href="https://twitter.com/adeileri"  color="#3e8dc6" isExternal>Twitter</Link> or via  <Link href="mailto:adebayorilerioluwa@gmail.com" color="#3e8dc6">Email</Link>
-                </Text> 
+            <Text fontSize="md" opacity={0.9} mt="1">
+              Reach Out on{" "}
+              <Link
+                href="https://twitter.com/adeileri"
+                color="#3e8dc6"
+                isExternal
+              >
+                Twitter
+              </Link>{" "}
+              or via{" "}
+              <Link href="mailto:adebayorilerioluwa@gmail.com" color="#3e8dc6">
+                Email
+              </Link>
+            </Text>
           </Box>
         </Box>
       </Box>

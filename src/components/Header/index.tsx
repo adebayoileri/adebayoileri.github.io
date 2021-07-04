@@ -3,20 +3,12 @@ import {
   Flex,
   HStack,
   Button,
-  // IconButton,
   Text,
-  // useColorMode,
   Link,
-  // useColorModeValue,
+
 } from "@chakra-ui/core";
 import React from "react";
-// import { FaMoon, FaSun } from "react-icons/fa";
-
 const HeaderContent = (props: any) => {
-  // const { toggleColorMode: toggleMode } = useColorMode()
-  // const text = useColorModeValue("dark", "light")
-  // const SwitchIcon = useColorModeValue(FaMoon, FaSun)
-
   return (
     <Flex w="100%" h="100%" px="6" align="center" justify="space-between">
       <Flex align="center">
@@ -52,16 +44,6 @@ const HeaderContent = (props: any) => {
         >
           <Button>Resume</Button>
         </Link>
-        {/* <IconButton
-          size="md"
-          fontSize="lg"
-          aria-label={`Switch to ${text} mode`}
-          variant="ghost"
-          color="current"
-          ml="3"
-          onClick={toggleMode}
-          icon={<SwitchIcon />}
-        /> */}
       </Flex>
     </Flex>
   );

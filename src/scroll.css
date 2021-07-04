@@ -1,3 +1,6 @@
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
+  font-display: swap;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: grayscale;
 }
