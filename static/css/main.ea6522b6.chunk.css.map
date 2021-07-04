@@ -1,0 +1,1 @@
+{"version":3,"sources":["scroll.css"],"names":[],"mappings":"AAAA,KACE,sBAAuB,CACvB,iBAAkB,CAClB,kCAAmC,CACnC,6BACF","file":"main.ea6522b6.chunk.css","sourcesContent":["html {\r\n  scroll-behavior: smooth;\r\n  font-display: swap;\r\n  -webkit-font-smoothing: antialiased;\r\n  -moz-font-smoothing: grayscale;\r\n}\r\n"]}
