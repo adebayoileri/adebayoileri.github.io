@@ -31,7 +31,7 @@ const HeaderContent = (props: any) => {
           <Link href="/about" style={{ textDecoration: "none" }}>
             About
           </Link>
-          <Link href="#projects" style={{ textDecoration: "none" }}>
+          <Link href="/#projects" style={{ textDecoration: "none" }}>
             Projects
           </Link>
           {/* "https://docs.google.com/document/d/1PxfGoI88gx26h7EebkXm3bZod13VELnsAtEkMgvmn3U/edit?usp=sharing" */}
