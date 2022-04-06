@@ -34,10 +34,9 @@ const HeaderContent = (props: any) => {
           <Link href="/#projects" style={{ textDecoration: "none" }}>
             Projects
           </Link>
-          {/* "https://docs.google.com/document/d/1PxfGoI88gx26h7EebkXm3bZod13VELnsAtEkMgvmn3U/edit?usp=sharing" */}
         </HStack>
         <Link
-          href="https://standardresume.co/r/C4cPLKPKk8hg-scZ5rhlp"
+          href="https://standardresume.co/r/adebayoileri"
           ml="3"
           isExternal
           style={{ textDecoration: "none" }}
